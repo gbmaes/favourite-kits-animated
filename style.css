@@ -1,4 +1,5 @@
 
+
 /* I took out bootstrap css! */
 
 /* Google Fonts */
@@ -143,7 +144,7 @@ transition: all .2s; /* Animation */
 	margin-right:24px;
 	right: 0;
 }
-/* whats this lol
+/* 
 #content > .right{
     right: 0;
     
@@ -155,36 +156,17 @@ transition: all .2s; /* Animation */
     line-height: 41px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer{
+	position:absolute;
+	bottom:0;
+	width:70%;
+	height:50px;
+	color: #fff;
+	float: right;
+	margin: 0px 0px 0px 360px;
+	text-align: right;
+    padding: 10px 50px;
+}
 
 /* ===================== Animations ========================= */
 
@@ -217,17 +199,6 @@ transition: all .2s; /* Animation */
     transform: rotate(0);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
