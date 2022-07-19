@@ -1,0 +1,234 @@
+
+/* I took out bootstrap css! */
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Sarpanch:900");
+
+body {
+	padding:0;
+	margin:0;
+	background-color:#000;
+}
+
+/* stop ugly blue select around items */
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+#content {
+	position:fixed;
+	height:100%;
+	width:100%;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/bg2.jpg');
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#content > #title {
+	display:block;
+	width:100%;
+	height:auto;
+	text-align:center;
+	padding:0;
+	margin:0;
+	color:#20E142;
+	font-family: "Sarpanch", sans-serif;
+
+	transform: skew(-3deg) rotate(-3deg);
+	grid-area: text;
+	 
+	font-size: 80px;
+	margin: 0;
+	margin-top:24px;
+	padding: 0px;
+	color: #E1E1E1;
+	text-shadow: 1vmin 1vmin 0 #19CB43, -1vmin -1vmin 0 #D53A33;
+	transition: all .2s;
+	
+}
+#content > #title:hover {
+	text-shadow: -1vmin -1vmin 0 #19CB43, 1vmin 1vmin 0 #D53A33;
+}
+#content > #title.animate {
+	text-shadow: -1vmin -1vmin 0 #19CB43, 1vmin 1vmin 0 #D53A33;
+}
+#content > .images{
+	text-align:center;
+	position:absolute;
+	top: calc(50% - 200px); /* half of the height! REF:1*/
+	width:100%;
+	height:400px;
+}
+#content > .images > img {
+    height: 100%;
+    width: 100%;
+	max-height:368px;
+	max-width:368px;
+	margin: 0 auto;
+
+	transition:all.3s ease-in;
+	display:none;
+}
+#content > .images > img.on {
+
+	display:block;
+	 animation: fadein 500ms;
+}
+
+#content > .btn-sliders {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);  
+	 /* ^ This is good but really makes dynamic content a problem- doesnt matter here but you will realise one day! My old school way always works  (ref 1) */
+}
+
+#content > .btn-sliders > span {
+    height: 24px;
+    width: 64px;
+    /*border: 2px solid rgba(255, 255, 255, 0.2);*/
+    margin: 0 3px;
+    cursor: pointer;
+	border-radius:4px;
+	transition:background-color .2s ease-in-out;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+#content > .btn-sliders > span:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+#content > .btn-sliders > span.on {
+	background-color: #fff;
+}
+#content > .sliders {
+	/*
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width:48px;
+	height:48px;
+	border-radius:50%;
+    background-color:rgba(255, 255, 255, 0.2);
+	cursor:pointer;
+	transition:background-color .2s ease-in-out;
+	
+	display:flex;
+	align-items:center;
+	justify-content:center;
+*/
+/*changed to emojis!*/
+font-size:80px;
+width:auto;
+height:auto;
+position:absolute;
+
+top: calc(50% - 50px);
+cursor:pointer;
+transition: all .2s; /* Animation */	    
+}
+#content > .sliders:hover {
+ font-size:200px;
+ top: calc(50% - 155px);
+}
+#content > .sliders.left  {
+	margin-left:24px;
+}
+#content >.sliders.right  {
+	margin-right:24px;
+	right: 0;
+}
+/* whats this lol
+#content > .right{
+    right: 0;
+    
+}
+*/
+#content >.sliders span{
+	font-size: 35px;
+    color: rgb(255, 16, 16);
+    line-height: 41px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== Animations ========================= */
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.wiggle {
+
+  animation-name: wiggle;
+  animation-duration: 1s;
+  animation-iteration-count:infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(4deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== LEts learn breakpoints! [TODO] ========================= */

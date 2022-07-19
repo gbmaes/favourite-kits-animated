@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- I took out font awesome and bootstrap. Lets use emojis for fun and learn breakpoints in css for sizing! -->
+    <link rel="stylesheet" href="./style.css">
+    <title>My top 10 favourite 22/23's football kits so far</title>
+</head>
+<body>
+	<div id="content" class="noselect">
+        <h2 id="title">Top Kits '22 -'23</h2>
+        
+        <div class="images">
+            <img src="./assets/wales.png" alt="" class="src">
+            <img src="./assets/mufc2.png" alt="" class="src">
+            <img src="./assets/celtic.png" alt="" class="src">
+            <img src="./assets/stpauli.png" alt="" class="src">
+            <img src="./assets/bayern.png" alt="" class="src">
+            <img src="./assets/leeds.png" alt="" class="src">
+            <img src="./assets/liverpool.png" alt="" class="src">
+            <img src="./assets/juve.png" alt="" class="src">
+            <img src="./assets/sampdoria.png" alt="" class="src">
+            <img src="./assets/werder.png" alt="" class="src">
+        </div>
+        
+        <div class="sliders left wiggle" onclick="side_slide(-1)">👈</div>
+          
+        <div class="sliders right wiggle" onclick="side_slide(1)">👉</div>
+   		
+        <div class="btn-sliders">
+            <span onclick="btn_slide(1)"></span>
+            <span onclick="btn_slide(2)"></span>
+            <span onclick="btn_slide(3)"></span>
+            <span onclick="btn_slide(4)"></span>
+            <span onclick="btn_slide(5)"></span>
+            <span onclick="btn_slide(6)"></span>
+            <span onclick="btn_slide(7)"></span>
+            <span onclick="btn_slide(8)"></span>
+            <span onclick="btn_slide(9)"></span>
+            <span onclick="btn_slide(10)"></span>
+        </div>
+       
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
