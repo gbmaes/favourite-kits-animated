@@ -1,7 +1,5 @@
 
-
 /* This was too complicated for me! XD*/
-
 var indexValue = 1;
 
 showImg(indexValue);
@@ -40,9 +38,6 @@ function showImg(e)
   
 }
 
-
-
-
 function graphicAnimation()
 {
 	var el = document.querySelector("#title");
@@ -69,6 +64,5 @@ function checkKey(e) {
 	// right arrow
     if (e.keyCode == '39')
     	side_slide(1)
-
 
 }
