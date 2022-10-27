@@ -2,7 +2,6 @@
 /* This was too complicated for me! XD*/
 var indexValue = 1;
 showImg(indexValue);
-
 function btn_slide(e)
 {
 	showImg(indexValue = e);
