@@ -1,4 +1,3 @@
-
 var indexValue = 1;
 showImg(indexValue);
 function btn_slide(e)
