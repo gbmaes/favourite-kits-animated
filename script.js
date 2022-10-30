@@ -43,7 +43,6 @@ function graphicAnimation()
 		document.querySelector("#title").classList.add("animate");
 }
 
-
 /* Lets use some keyboard! */
 document.onkeydown = checkKey;
 
