@@ -27,7 +27,6 @@ function showImg(e)
     slider[i].classList.remove("on");
   }
   
-
   img[indexValue-1].classList.add("on");
   
   slider[indexValue-1].classList.add("on");
