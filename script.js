@@ -54,7 +54,6 @@ function checkKey(e) {
     if (e.keyCode == '37')
     	side_slide(-1)
 
-	
 	// right arrow
     if (e.keyCode == '39')
     	side_slide(1)
